@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "modemon -e js, graphql -x node index.js",
     "dev": "nodemon --exec ts-node index.ts",
     "build": "tsc",
     "postinstall":"tsc"
