@@ -6,7 +6,8 @@
   "scripts": {
     "start": "ts-node index.ts",
     "dev": "nodemon --exec ts-node index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "postinstall":"tsc"
   },
   "keywords": [],
   "author": "",
@@ -20,7 +21,6 @@
   },
   "dependencies": {
     "apollo-server-express": "^2.5.0-rc.0",
-    "apollo-server-express@rc": "^1.4.0",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
