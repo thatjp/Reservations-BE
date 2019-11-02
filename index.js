@@ -13,9 +13,7 @@ var server = new ApolloServer({
     resolvers: resolvers,
 });
 server.applyMiddleware({ app: app });
-app.listen(process.env.PORT || 5000, function () {
-    return console.log("Server ready at http://localhost:" + process.env.PORT + server.graphqlPath);
-});
+app.listen(process.env.PORT || 5000);
 process.on('unhandledRejection', function (err, promise) {
     console.log("Error: " + err.message);
     server.close(function () { return process.exit(1); });
